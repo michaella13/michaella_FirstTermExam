@@ -17,7 +17,7 @@ public class MathController {
 
     @PostMapping()
     @ResponseStatus(HttpStatus.CREATED)
-public Integer doMath(@RequestBody DoMathRequest doMathRequest){
+public DoMathRequest doMath(@RequestBody DoMathRequest doMathRequest){
 return mathOperator.doMath(doMathRequest);
 
     }
